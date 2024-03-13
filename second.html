@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         <title>PANDA</title>
+         <link rel="stylesheet" href="todo.css" id="theme" />
+         <link rel="icon" type="icon" href="logo.png">
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">
+                <img
+                  id="header-img"
+                  src="panda.png"
+                  height="100" 
+                  width="400"
+                  alt="Panda logo"
+                />
+            </div>
+            <div class="heading">
+                <h1>Better organise your work load</h1>
+            </div>  
+            <div class="heading-form">
+                <form action="">
+                  <label for="search">Search: </label>
+                  <input type="search" class="heading__search" id="search">
+                </form>
+              </div>
+        </header>
+        <main class="main">
+            <section class="section-a">
+                <h2>Add Todo</h2>
+      <form action="">
+        <div class="form">
+          <label for="addTodo" class="hidden__label">Add To Do</label>
+          <input type="text" id="addTodo" placeholder="  ✍️ Add item..." class="main-form">
+          <input type="submit" id="submitTodo" class="main-submit" value="Add">
+          <div id="output"></div>
+        </div>
+      </form>
+      <ul id="todos">
+        <h3>My Todos </h3>
+        <li>Go swimming tomorrow<button class="delete">x</button></li>
+        <li>Visit mum by 12pm today<button class="delete">x</button></li>
+        <li>Play chess game by 2pm<button class="delete">x</button></li>
+        <li>Do the dishes by 7pm<button class="delete">x</button></li>
+      </ul>   
+    </section>
+</main>
+        <footer>
+            <small>Developed By <cite>Sibasish Rout</cite></small>
+          </footer>
+          <script src="main.js"></script>
+    </body>
+</html>

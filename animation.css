@@ -1,0 +1,220 @@
+body{
+    background-color:  #ec9448;
+    margin: 0px;
+    padding: 0px;
+  }
+  .panda{
+    position: absolute;
+    top: 10%;
+    left: 43%;
+    height: 120px;
+    width: 80px;
+    background-color: whitesmoke ;
+    border: 5px solid black;
+    border-radius: 30%;
+    
+  }
+  .face{
+    position: relative;
+    background-color: whitesmoke;
+    border: 5px solid black;
+    height: 90px;
+    width: 110px;
+    border-radius: 50%;
+    bottom: 30px;
+    right: 20px;
+  }
+  .ear-l,.ear-r{
+    position: relative;
+    background-color: black;
+    height: 25px;
+    width: 40px;
+    border-radius: 0px 0px 40px 40px;
+  }
+  .ear-l{
+    transform: rotate(145deg);
+    bottom: 13px;
+    right: 8px;
+  } 
+  .ear-r{
+    transform:rotate(-145deg);
+    bottom: 38px; 
+    left: 78px;
+  
+  }
+  .eye-l,.eye-r{
+    position: relative;
+    background-color: black;
+    width: 28px;
+    height: 33px;
+    border-radius: 50%;
+  } 
+  .eye-l{
+    bottom: 30px;
+    left: 10px;
+    transform: rotate(25deg); 
+  
+  }
+  .eye-r{
+    bottom: 63px;
+    left: 72px;
+    transform: rotate(-25deg);  
+  }
+  .eyeball-l{
+    position: relative;
+    top: 8px;
+    left: 13px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+  }
+  .eyeball-r{
+    position: relative;
+    top: 9px;
+    left: 7px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+  }
+  .nose{
+    position: relative;
+    height: 8px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    bottom: 65px;
+    left: 48px;
+  } 
+  .hand-l,.hand-r{
+    position: relative;
+    width: 25px;
+    height: 43px;
+    background-color: black;
+    border-radius: 30px;
+  
+  }
+  .hand-l{
+    transform: rotate(90deg);
+    bottom: 28px;
+    right: 12px;
+    animation: wave 4s infinite;
+    transform-origin: top;
+    
+  }
+  @keyframes wave{
+    50%{
+          transform: rotate(120deg);
+    }
+  }
+  .hand-r{
+    transform: rotate(-90deg);
+    bottom: 92px;
+    left: 89px;
+  }
+  .leg-l,.leg-r{
+    position: relative;
+    background-color: black;
+    width: 25px;
+    height: 25px;
+    border-radius: 0px 0px 40px 40px;
+  }
+  .leg-l{
+    bottom: 65px; 
+    left: 15px;  
+  }
+  .leg-r{
+    bottom: 90px;
+    left: 42px;
+  }
+  .shadow{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 30px;
+    width: 100px;
+    border-radius: 50%;
+    bottom: 105px;
+    right: 10px;
+  }
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    
+  }
+  
+  /* Content Styles */
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ec9448;
+    margin-top: 5%;
+    letter-spacing: normal;
+    padding: 10px;
+  }
+  
+  /* Hello Styles */
+  .hello {
+    top: 10%;
+    text-align: center;
+    color: #333;
+    margin-bottom:0% ;
+    font-size: large;
+    
+
+  }
+  
+  /* Start Styles */
+  .start {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .start h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .start p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .start-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .start h1 {
+      font-size: 20px;
+    }
+    
+    .start p {
+      font-size: 14px;
+    }
+    
+    .start-button {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  }
+  
